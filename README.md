@@ -25,6 +25,26 @@ The project consisted of determining the total number of employees per title who
     - Easy Ensemble AdaBoost Classifier
 
 ## Results
+
+- **Oversampling Algorithms:**
+    - Naive Random Oversampling
+    Model | Loan Status | Accuracy | Precision | Recall | F1 Score
+    ------ | ------ | ------ | ------ | ------ | ------
+    Naive Random Oversampling | high_risk | 0.78 | 0.02 | 0.70 | 0.05
+    Naive Random Oversampling | low_risk | 0.78 | 1.00 | 0.86 | 0.92    
+    - SMOTE Oversampling
+    Model | Loan Status | Accuracy | Precision | Recall | F1 Score
+    ------ | ------ | ------ | ------ | ------ | ------
+    SMOTE | high_risk | 0.80 | 0.03 | 0.70 | 0.06
+    SMOTE | low_risk | 0.80 | 1.00 | 0.88 | 0.94 
+- **Undersampling Algorithm:**
+    - Cluster Centroids
+- **Combination Over and Undersampling Algorithm:**
+    - SMOTEENN
+- **Ensemble Algorithms:**
+    - Balanced Random Forest Classifier
+    - Easy Ensemble AdaBoost Classifier
+
 Model | Loan Status | Accuracy | Precision | Recall | F1 Score
 ------ | ------ | ------ | ------ | ------ | ------
 Naive Random Oversampling | high_risk | 0.78 | 0.02 | 0.70 | 0.05
