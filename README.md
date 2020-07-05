@@ -26,15 +26,18 @@ The project consisted of determining the total number of employees per title who
 
 ## Results
 - **Naive Random Oversampling** (Accuracy = 0.78):
+<br/>
 Loan Status | Accuracy | Precision | Recall | F1 Score
 ------ | ------ | ------ | ------ | ------
 high_risk | 0.78 | 0.02 | 0.70 | 0.05
 low_risk | 0.78 | 1.00 | 0.86 | 0.92
+
 - **SMOTE Oversampling** (Accuracy = 0.80)
 Loan Status | Accuracy | Precision | Recall | F1 Score
 ------ | ------ | ------ | ------ | ------
 high_risk | 0.80 | 0.03 | 0.70 | 0.06
 low_risk | 0.80 | 1.00 | 0.88 | 0.94
+
 - **Cluster Centroids Undersampling** (Accuracy = 0.78)
 Loan Status | Accuracy | Precision | Recall | F1 Score
 ------ | ------ | ------ | ------ | ------
