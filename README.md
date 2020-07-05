@@ -67,16 +67,8 @@ The project consisted of determining the total number of employees per title who
 | high_risk | 0.06 | 0.92 | 0.12 |
 | low_risk | 0.91 | 0.92 | 0.96 |
 
-The over and undersampling models had relatively high accuracy (78-79%). However, despite the high precision for the majority class (low_risk), meaning a reliable positive classification, the precision for high_risk loan statuses was very low, indicating a large number of false positives (most that were considered to be high_risk were actually low_risk).
+For all methods analyzed, the Precision was very high for the majority class (low_risk), but very low for detecting high risk loans, indicating a large number of false positives (most that were considered to be high_risk were actually low_risk).
 
-The sensitivity (recall) for the majority class (low_risk) was lower for the Oversampling models, meaning a large number of false negatives; and about the same for the Undersampling one.
+The Sensitivity (recall) for detecting high risk was lower for the two Oversampling models, but lowest using the Balanced Random Forest model. This measure would be a priority for predicting credit risk, since it's preferrable for the model to be aggressive in classifying loans as high risk than to have too many false negatives.
 
-Using the SMOTEENN model, the accuracy was much reduced, and the sensitivity was very high for detecting high_risk loans, which would be important for predicting credit risk. However, like with the previous models, the precision was extremely low, resulting in very low F1 scores and many false positives.
-
-The Balanced Random Forest Classifier model had a similar performance to the Over and Undersampling ones.
-
-In summary, this model may not be the best one for preventing fraudulent loan applications because the model's accuracy, 0.552, is low, and the precision and recall are not good enough to state that the model will be good at classifying fraudulent loan applications. Modeling is an iterative process: you may need more data, more cleaning, another model parameter, or a different model. It’s also important to have a goal that’s been agreed upon, so that you know when the model is good enough.
-
-From the confusion matrix results, the precision for the bad loan applications is low, indicating a large number of false positives, which indicates an unreliable positive classification. The recall is also low for the bad loan applications, which is indicative of a large number of false negatives. The F1 score is also low (33).
-
-In summary, this random forest model is not good at classifying fraudulent loan applications because the model’s accuracy, 0.520, and F1 score are low.
+The model built using Easy Ensemble AdaBoost would be the best of the ones evaluated, since it has high accuracy, high Sensitivity for high_risk without sacrificing Sensitivity or Precision for low_risk detection. However, none of the models would be the great detecting high risk loan applications, considering the really low F1 scores for that class.
