@@ -1,7 +1,7 @@
 # LendingClub
 
 ## Project Overview
-The project consisted of determining the total number of employees per title who will be retiring and identifying the employees who are eligible to participate in a mentorship program.
+The project consisted of evaluating different models with unbalanced classes, including using resampling techniques, to determine whether they should be used to predict credit risk.
 
 ## Resources
 - Data source:
@@ -9,8 +9,9 @@ The project consisted of determining the total number of employees per title who
 - Software: Python 3.7.7, Jupyter Notebook, Visual Studio Code 1.43.1
 
 ## Preprocessing:
-* Drop features that contain the same value throughout all rows
-
+* Dropped features that contain a single value throughout all rows, since they would not be useful for the model;
+* Binary encoded categorical features;
+* Standardized the data using Standard Scaler.
 
 ## Models Evaluated:
 - **Oversampling Algorithms:**
