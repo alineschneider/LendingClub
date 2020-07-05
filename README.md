@@ -28,10 +28,10 @@ The project consisted of determining the total number of employees per title who
 
 - **Oversampling Algorithms:**
     - Naive Random Oversampling
-    Model | Loan Status | Accuracy | Precision | Recall | F1 Score
-    ------ | ------ | ------ | ------ | ------ | ------
-    Naive Random Oversampling | high_risk | 0.78 | 0.02 | 0.70 | 0.05
-    Naive Random Oversampling | low_risk | 0.78 | 1.00 | 0.86 | 0.92    
+    | Model | Loan Status | Accuracy | Precision | Recall | F1 Score |
+    | ------ | ------ | ------ | ------ | ------ | ------ |
+    | Naive Random Oversampling | high_risk | 0.78 | 0.02 | 0.70 | 0.05 |
+    | Naive Random Oversampling | low_risk | 0.78 | 1.00 | 0.86 | 0.92 |  
     - SMOTE Oversampling
     Model | Loan Status | Accuracy | Precision | Recall | F1 Score
     ------ | ------ | ------ | ------ | ------ | ------
