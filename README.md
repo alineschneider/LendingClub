@@ -61,6 +61,7 @@ The project consisted of determining the total number of employees per title who
 | low_risk | 1.00 | 0.90 | 0.95 |
 
 - **Easy Ensemble AdaBoost** (Accuracy = 0.92):
+
 | Loan Status | Precision | Recall | F1 Score |
 | ------ | ------ | ------ | ------ |
 | high_risk | 0.06 | 0.92 | 0.12 |
