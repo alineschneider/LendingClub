@@ -26,6 +26,7 @@ The project consisted of determining the total number of employees per title who
 
 ## Results
 - **Naive Random Oversampling** (Accuracy = 0.78):
+
 | Loan Status | Precision | Recall | F1 Score |
 | ------ | ------ | ------ | ------ |
 | high_risk | 0.02 | 0.70 | 0.05 |
@@ -51,6 +52,11 @@ Balanced Random Forest | low_risk | 0.77 | 1.00 | 0.90 | 0.95
 
 Easy Ensemble AdaBoost | high_risk | 0.91 | 0.06 | 0.92 | 0.12
 Easy Ensemble AdaBoost | low_risk | 0.91 | 1.00 | 0.92 | 0.96
+
+| Loan Status | Precision | Recall | F1 Score |
+| ------ | ------ | ------ | ------ |
+| high_risk | 0.02 | 0.70 | 0.05 |
+| low_risk | 1.00 | 0.86 | 0.92 |
 
 The over and undersampling models had relatively high accuracy (78-79%). However, despite the high precision for the majority class (low_risk), meaning a reliable positive classification, the precision for high_risk loan statuses was very low, indicating a large number of false positives (most that were considered to be high_risk were actually low_risk).
 
