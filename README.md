@@ -13,14 +13,14 @@ The project consisted of determining the total number of employees per title who
 
 
 ## Models Evaluated:
-### Oversampling Algorithms:
+#### Oversampling Algorithms:
 * Naive Random Oversampling
 * SMOTE Oversampling
-### Undersampling Algorithm:
+#### Undersampling Algorithm:
 * Cluster Centroids
-### Combination Over and Undersampling Algorithm 
+#### Combination Over and Undersampling Algorithm 
 * SMOTEENN
-### Ensemble Algorithms:
+#### Ensemble Algorithms:
 * Balanced Random Forest Classifier
 * Easy Ensemble AdaBoost Classifier
 
