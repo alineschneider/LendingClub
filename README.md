@@ -32,31 +32,39 @@ The project consisted of determining the total number of employees per title who
 | high_risk | 0.02 | 0.70 | 0.05 |
 | low_risk | 1.00 | 0.86 | 0.92 |
 
-- **SMOTE Oversampling** (Accuracy = 0.80)
-Loan Status | Accuracy | Precision | Recall | F1 Score
------- | ------ | ------ | ------ | ------
-high_risk | 0.80 | 0.03 | 0.70 | 0.06
-low_risk | 0.80 | 1.00 | 0.88 | 0.94
-
-- **Cluster Centroids Undersampling** (Accuracy = 0.78)
-Loan Status | Accuracy | Precision | Recall | F1 Score
------- | ------ | ------ | ------ | ------
-high_risk | 0.78 | 0.02 | 0.78 | 0.03
-low_risk | 0.78 | 1.00 | 0.77 | 0.87
-
-SMOTEENN | high_risk | 0.50 | 0.01 | 0.99 | 0.03
-SMOTEENN | low_risk | 0.50 | 0.99 | 0.01 | 0.02
-
-Balanced Random Forest | high_risk | 0.77 | 0.04 | 0.64 | 0.07
-Balanced Random Forest | low_risk | 0.77 | 1.00 | 0.90 | 0.95
-
-Easy Ensemble AdaBoost | high_risk | 0.91 | 0.06 | 0.92 | 0.12
-Easy Ensemble AdaBoost | low_risk | 0.91 | 1.00 | 0.92 | 0.96
+- **SMOTE Oversampling** (Accuracy = 0.80):
 
 | Loan Status | Precision | Recall | F1 Score |
 | ------ | ------ | ------ | ------ |
-| high_risk | 0.02 | 0.70 | 0.05 |
-| low_risk | 1.00 | 0.86 | 0.92 |
+| high_risk | 0.03 | 0.71 | 0.06 |
+| low_risk | 1.00 | 0.88 | 0.94 |
+
+- **Cluster Centroids Undersampling** (Accuracy = 0.78):
+
+| Loan Status | Precision | Recall | F1 Score |
+| ------ | ------ | ------ | ------ |
+| high_risk | 0.02 | 0.78 | 0.03 |
+| low_risk | 1.00 | 0.77 | 0.87 |
+
+- **SMOTEENN** (Accuracy = 0.50):
+
+| Loan Status | Precision | Recall | F1 Score |
+| ------ | ------ | ------ | ------ |
+| high_risk | 0.01 | 0.99 | 0.01 |
+| low_risk | 0.99 | 0.01 | 0.02 |
+
+- **Balanced Random Forest** (Accuracy = 0.77):
+
+| Loan Status | Precision | Recall | F1 Score |
+| ------ | ------ | ------ | ------ |
+| high_risk | 0.04 | 0.64 | 0.07 |
+| low_risk | 1.00 | 0.90 | 0.95 |
+
+- **Easy Ensemble AdaBoost** (Accuracy = 0.92):
+| Loan Status | Precision | Recall | F1 Score |
+| ------ | ------ | ------ | ------ |
+| high_risk | 0.06 | 0.92 | 0.12 |
+| low_risk | 0.91 | 0.92 | 0.96 |
 
 The over and undersampling models had relatively high accuracy (78-79%). However, despite the high precision for the majority class (low_risk), meaning a reliable positive classification, the precision for high_risk loan statuses was very low, indicating a large number of false positives (most that were considered to be high_risk were actually low_risk).
 
