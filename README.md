@@ -25,25 +25,28 @@ The project consisted of determining the total number of employees per title who
     - Easy Ensemble AdaBoost Classifier
 
 ## Results
-- High Risk:
+- **Naive Random Oversampling** (Accuracy = 0.78):
+Loan Status | Accuracy | Precision | Recall | F1 Score
+------ | ------ | ------ | ------ | ------
+high_risk | 0.78 | 0.02 | 0.70 | 0.05
+low_risk | 0.78 | 1.00 | 0.86 | 0.92
+- **SMOTE Oversampling** (Accuracy = 0.80)
+Loan Status | Accuracy | Precision | Recall | F1 Score
+------ | ------ | ------ | ------ | ------
+high_risk | 0.80 | 0.03 | 0.70 | 0.06
+low_risk | 0.80 | 1.00 | 0.88 | 0.94
+- **Cluster Centroids Undersampling** (Accuracy = 0.78)
+Loan Status | Accuracy | Precision | Recall | F1 Score
+------ | ------ | ------ | ------ | ------
+high_risk | 0.78 | 0.02 | 0.78 | 0.03
+low_risk | 0.78 | 1.00 | 0.77 | 0.87
 
-Model | Loan Status | Accuracy | Precision | Recall | F1 Score
------- | ------ | ------ | ------ | ------ | ------
-Naive Random Oversampling | high_risk | 0.78 | 0.02 | 0.70 | 0.05
-Naive Random Oversampling | low_risk | 0.78 | 1.00 | 0.86 | 0.92
-</br>
-SMOTE | high_risk | 0.80 | 0.03 | 0.70 | 0.06
-SMOTE | low_risk | 0.80 | 1.00 | 0.88 | 0.94
-</br>
-Undersampling | high_risk | 0.78 | 0.02 | 0.78 | 0.03
-Undersampling | low_risk | 0.78 | 1.00 | 0.77 | 0.87
-</br>
 SMOTEENN | high_risk | 0.50 | 0.01 | 0.99 | 0.03
 SMOTEENN | low_risk | 0.50 | 0.99 | 0.01 | 0.02
-</br>
+
 Balanced Random Forest | high_risk | 0.77 | 0.04 | 0.64 | 0.07
 Balanced Random Forest | low_risk | 0.77 | 1.00 | 0.90 | 0.95
-</br>
+
 Easy Ensemble AdaBoost | high_risk | 0.91 | 0.06 | 0.92 | 0.12
 Easy Ensemble AdaBoost | low_risk | 0.91 | 1.00 | 0.92 | 0.96
 
